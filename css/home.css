@@ -1,0 +1,27 @@
+
+#content-block-home {
+    height: 100dvh;
+    width: 100vw;
+    background-color: rgb(169, 208, 110);
+    background-image: url("/assets/images/homestead.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 0; */
+}
+
+.content-home {
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+.content-home > h1 {
+    font-size: min(7vw, 48px);
+}
+
+.content-home > span {
+    font-size: min(5vw, 20px);
+}

@@ -1,0 +1,95 @@
+#content-block-contact {
+    height: 100dvh;
+    width: min(96%, 880px);
+    margin: 0 auto;
+    padding-top: 4rem;
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-item:nth-child(1) {
+    height: fit-content;
+    flex: 0 0 auto;
+    height: fit-content;
+}
+
+.contact-item:nth-child(2) {
+    min-height: 360px;
+    flex: 1 0 auto;
+    overflow-y: scroll;
+}
+
+@media (max-height: 880px) {
+    .contact-item:nth-child(2) {
+        min-height: 360px;
+        flex: 1 0 auto;
+        overflow-y: scroll;
+        height: 100%;
+    }
+}
+
+.contact-form {
+    height: auto;
+    max-width: 100%;
+    border: 1px rgb(174, 174, 174) solid;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    box-shadow: 0 1px 2px rgb(178, 178, 178);
+}
+
+.contact-form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: row;
+    justify-content: space-between;
+    margin: 1rem;
+    gap: 0.2rem;
+}
+
+.contact-form span {
+    padding: 0.5rem 0;
+}
+
+.contact-form label {
+    flex-grow: 0;
+}
+
+.input-box {
+    color: grey;
+    background-color: transparent;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 0.5rem;
+}
+
+.contact-form textarea {
+    border: 1px solid rgb(214, 214, 214);
+    background-color: transparent;
+    padding: 0.5rem;
+    width: auto;
+    resize: vertical;
+    field-sizing: content;
+    min-height: 4em;
+    max-height: 6em;
+}
+
+.submit-btn {
+    color: black;
+    background-color: transparent;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 0.5rem;
+}
+
+.submit-btn:hover {
+    background-color: rgb(211, 211, 211);
+}
+
+.submit-btn:active {
+    background-color: rgb(148, 188, 88);
+}
+
+.message-sent {
+    color: white;
+    background-color: rgb(117, 203, 117);
+}

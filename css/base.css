@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* Website container */
+.scroll-container {
+    height: 100dvh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Header container */
+.header-container {
+    display: block;
+    height: 4rem;
+    width: 100vw;
+    position: relative;
+}
+
+/* Content container */
+.content-container {
+    height: 100dvh;
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: -4rem;
+    padding-top: 4rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-align: start;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    background-color: rgb(239, 239, 239);
+}
+
+/* Each individual content block contains website information */
+.content-block {
+    scroll-snap-align: start;
+    overflow: auto;
+}
+
+/* Drop down navigation (contained in header) */
+#dropdown-container {
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 1rem;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0px 2px rgb(179, 179, 179);
+}
+
+.btn-dropdown {
+    display: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    background-color: transparent;
+    justify-content: space-between;
+    border: none;
+    padding: 0.4rem;
+    text-decoration: none;
+    color: black;
+
+}
+
+.btn-dropdown:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.btn-dropdown:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.btn-dropdown span {
+    margin-top: auto;
+    margin-bottom: auto; 
+    font-size: 14px;
+}
+
+.btn-dropdown img {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 20px;
+    aspect-ratio: 1 / 1;
+    margin-top: auto;
+}
+
+.visible {
+    display: flex;
+}
+
+.active {
+    background-color: rgb(215, 215, 215);
+    color: black;
+}
+
+.active span {
+    color: rgb(148, 43, 43);
+    color: red;
+}
+
+
+/* Socials container (contained in header) */
+.socials-container {
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    right: 1rem;
+}
+
+.socials-container img {
+    stroke: purple;
+    height: 25px;
+    aspect-ratio: 1 / 1;
+}
+
+/* Default button styling */
+
+.btn {
+    background-color: rgb(14, 97, 51);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid darkgrey;
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgb(28, 116, 68);
+}
