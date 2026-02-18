@@ -17,7 +17,7 @@ backButton.addEventListener('click', () => {
 
     const nextElementIndex = ((activeIndex - 1 + imgs.length) % imgs.length)
 
-    console.log(activeIndex, nextElementIndex)
+    // console.log(activeIndex, nextElementIndex)
 
     imgs[activeIndex].classList.remove("active-img");
     imgs[nextElementIndex].classList.add("active-img");
